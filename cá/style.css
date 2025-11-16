@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#ho-ca {
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.inside {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ca {
+  position: absolute;
+}
+
+.nho1 {
+  width: 80px;
+  top: 30px;
+  left: 120vw;
+  animation: swim 16s linear infinite;
+  animation-delay: 0s;
+}
+
+.nho2 {
+  width: 80px;
+  top: calc(100vh - 100px);
+  left: 120vw;
+  animation: swim 18s linear infinite;
+  animation-delay: 3s;
+}
+
+.nho3 {
+  width: 80px;
+  top: calc(100vh - 120px);
+  left: 120vw;
+  animation: swim 17s linear infinite;
+  animation-delay: 6s;
+}
+
+.to1 {
+  width: 140px;
+  top: 100px;
+  left: 120vw;
+  animation: swim 20s linear infinite;
+  animation-delay: 2s;
+}
+
+.to2 {
+  width: 170px;
+  top: 200px; 
+  left: 120vw;
+  animation: swim 22s linear infinite;
+  animation-delay: 5s;
+}
+
+@keyframes swim {
+  0%   { left: 120vw; transform: scaleX(1); }
+  49%  { left: 0; transform: scaleX(1); }
+  50%  { left: 0; transform: scaleX(-1); }
+  100% { left: 120vw; transform: scaleX(-1); }
+}
